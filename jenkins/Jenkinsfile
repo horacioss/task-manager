@@ -1,8 +1,8 @@
 pipeline {
     agent { label 'main' }
-//     environment {
-//         CI = 'true'
-//     }
+    environment {
+        CI = 'true'
+    }
     stages {
         stage('Install') {
             steps {
