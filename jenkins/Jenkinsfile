@@ -1,4 +1,5 @@
 pipeline {
+    agent { label 'main' }
     environment {
         CI = 'true'
     }
