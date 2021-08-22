@@ -16,11 +16,11 @@ pipeline {
 
   post {
     success {
-      mail body: 'Test over TaskManger was Failed', from: 'Jenkins CI', subject: 'Test Over TaskManagerApp', to: 'horacioss2013@gmail.com'
+      mail bcc: '', body: 'Any Test EMail', cc: '', from: 'horacioss2013@gmail.com', replyTo: '', subject: 'Tests over Tas', to: 'horaioss2013@gmail.com'
     }
     failure {
       slackSend channel: '#task-manager', message: 'Tests Failed'
-      mail body: 'Test over TaskManger was Failed', from: 'Jenkins CI', subject: 'Test Over TaskManagerApp', to: 'horacioss2013@gmail.com'
+      mail bcc: '', body: 'Any Test EMail', cc: '', from: 'horacioss2013@gmail.com', replyTo: '', subject: 'Tests over Tas', to: 'horaioss2013@gmail.com'
     }
 }
 }
