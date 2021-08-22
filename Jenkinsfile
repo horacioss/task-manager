@@ -9,7 +9,6 @@ pipeline {
       steps {
         sh 'yarn install'
         sh 'yarn test'
-        slackSend channel: '#task-manager', message: 'Tests Builded'
       }
     }
   
