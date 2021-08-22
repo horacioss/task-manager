@@ -9,7 +9,7 @@ pipeline {
       steps {
         sh 'yarn install'
         sh 'yarn test'
-        slackSend(channel: "#general", attachments: [
+        slackSend(channel: "#task-manager", attachments: [
           [
             text: 'I find your lack of faith disturbing!',
             fallback: 'Hey, Vader seems to be mad at you.',
