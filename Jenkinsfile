@@ -15,8 +15,6 @@ pipeline {
   }
 
   post {
-    success {
-    }
     failure {
       // mail body: 'Tests over Task manager was Failed', from: 'horacioss2013@gmail.com', subject: 'Tests over Tas', to: 'horaioss2013@gmail.com'
       emailext body: '''$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
